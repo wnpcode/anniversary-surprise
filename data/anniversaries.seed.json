@@ -1,0 +1,355 @@
+[
+  {
+    "slug": "pertama",
+    "year": 1,
+    "dateLabel": "ANNIVERSARY PERTAMA",
+    "eyebrow": "Satu tahun sejak cerita kita dimulai",
+    "headlineLead": "Setahun terakhir terasa cepat.",
+    "headlineEmphasis": "Sisanya ingin kujalani pelan-pelan, sama kamu.",
+    "intro": "Catatan kecil tentang awal kita, hari-hari setelahnya, dan satu hal yang ingin kusampaikan langsung.",
+    "memories": [
+      {
+        "label": "Hari pertama",
+        "copy": "Mulai dari satu pertemuan, lalu kita memberi ruang untuk cerita berikutnya."
+      },
+      {
+        "label": "Hari-hari kecil",
+        "copy": "Obrolan yang melebar, kebiasaan yang tumbuh, dan hal biasa yang terasa lebih baik karena ada kamu."
+      },
+      {
+        "label": "Hari ini",
+        "copy": "Satu tahun bersama. Aku senang kita sampai di sini, dan ingin tahu cerita apa yang menunggu setelahnya."
+      }
+    ],
+    "photos": [
+      {
+        "src": "/images/album/01-pertama/01-wedding-day.webp",
+        "alt": "Aisyah dan Warto berfoto bersama di depan dekorasi bunga pada hari pernikahan mereka.",
+        "caption": "10 Oktober 2025 · Salatiga"
+      },
+      {
+        "src": "/images/album/01-pertama/02-jadi-investor.webp",
+        "alt": "Foto kenangan anniversary pertama: Jadi Investor.",
+        "caption": "Jadi Investor"
+      },
+      {
+        "src": "/images/album/01-pertama/03-shopping.webp",
+        "alt": "Foto kenangan anniversary pertama: Shopping.",
+        "caption": "Shopping"
+      },
+      {
+        "src": "/images/album/01-pertama/04-tamu.webp",
+        "alt": "Foto kenangan anniversary pertama: Tamu.",
+        "caption": "Tamu"
+      },
+      {
+        "src": "/images/album/01-pertama/05-warmup-running.webp",
+        "alt": "Foto kenangan anniversary pertama: Warmup Running.",
+        "caption": "Warmup Running"
+      },
+      {
+        "src": "/images/album/01-pertama/07-finish-lari-pertama.webp",
+        "alt": "Foto kenangan anniversary pertama: Finish Lari Pertama.",
+        "caption": "Finish Lari Pertama"
+      },
+      {
+        "src": "/images/album/01-pertama/08-after-running.webp",
+        "alt": "Foto kenangan anniversary pertama: After Running.",
+        "caption": "After Running"
+      },
+      {
+        "src": "/images/album/01-pertama/09-misoa.webp",
+        "alt": "Foto kenangan anniversary pertama: Misoa.",
+        "caption": "Misoa"
+      },
+      {
+        "src": "/images/album/01-pertama/10-misoa.webp",
+        "alt": "Foto kenangan anniversary pertama: Misoa.",
+        "caption": "Misoa"
+      },
+      {
+        "src": "/images/album/01-pertama/11-camping.webp",
+        "alt": "Foto kenangan anniversary pertama: Camping.",
+        "caption": "Camping"
+      },
+      {
+        "src": "/images/album/01-pertama/12-rumah-atsiri.webp",
+        "alt": "Foto kenangan anniversary pertama: Rumah Atsiri.",
+        "caption": "Rumah Atsiri"
+      },
+      {
+        "src": "/images/album/01-pertama/13-rumah-atsiri.webp",
+        "alt": "Foto kenangan anniversary pertama: Rumah Atsiri.",
+        "caption": "Rumah Atsiri"
+      },
+      {
+        "src": "/images/album/01-pertama/14-rumah-atsiri.webp",
+        "alt": "Foto kenangan anniversary pertama: Rumah Atsiri.",
+        "caption": "Rumah Atsiri"
+      },
+      {
+        "src": "/images/album/01-pertama/15-rumah-atsiri.webp",
+        "alt": "Foto kenangan anniversary pertama: Rumah Atsiri.",
+        "caption": "Rumah Atsiri"
+      },
+      {
+        "src": "/images/album/01-pertama/16-rumah-atsiri.webp",
+        "alt": "Foto kenangan anniversary pertama: Rumah Atsiri.",
+        "caption": "Rumah Atsiri"
+      },
+      {
+        "src": "/images/album/01-pertama/17-tawangmangu.webp",
+        "alt": "Foto kenangan anniversary pertama: Tawangmangu.",
+        "caption": "Tawangmangu"
+      },
+      {
+        "src": "/images/album/01-pertama/18-konser.webp",
+        "alt": "Foto kenangan anniversary pertama: Konser.",
+        "caption": "Konser"
+      },
+      {
+        "src": "/images/album/01-pertama/19-check-progres.webp",
+        "alt": "Foto kenangan anniversary pertama: Check Progres.",
+        "caption": "Check Progres"
+      },
+      {
+        "src": "/images/album/01-pertama/20-kondangan.webp",
+        "alt": "Foto kenangan anniversary pertama: Kondangan.",
+        "caption": "Kondangan"
+      },
+      {
+        "src": "/images/album/01-pertama/21-mirror-selfie.webp",
+        "alt": "Foto kenangan anniversary pertama: Mirror Selfie.",
+        "caption": "Mirror Selfie"
+      },
+      {
+        "src": "/images/album/01-pertama/22-warto-birthday.webp",
+        "alt": "Foto kenangan anniversary pertama: Warto Birthday.",
+        "caption": "Warto Birthday"
+      },
+      {
+        "src": "/images/album/01-pertama/23-walking.webp",
+        "alt": "Foto kenangan anniversary pertama: Walking.",
+        "caption": "Walking"
+      },
+      {
+        "src": "/images/album/01-pertama/24-cari-sarapan.webp",
+        "alt": "Foto kenangan anniversary pertama: Cari Sarapan.",
+        "caption": "Cari Sarapan"
+      },
+      {
+        "src": "/images/album/01-pertama/25-cari-sarapan.webp",
+        "alt": "Foto kenangan anniversary pertama: Cari Sarapan.",
+        "caption": "Cari Sarapan"
+      },
+      {
+        "src": "/images/album/01-pertama/26-sekutu.webp",
+        "alt": "Foto kenangan anniversary pertama: Sekutu.",
+        "caption": "Sekutu"
+      },
+      {
+        "src": "/images/album/01-pertama/27-sekutu-shop.webp",
+        "alt": "Foto kenangan anniversary pertama: Sekutu Shop.",
+        "caption": "Sekutu Shop"
+      },
+      {
+        "src": "/images/album/01-pertama/28-jalan-bareng-nenek.webp",
+        "alt": "Foto kenangan anniversary pertama: Jalan Bareng Nenek.",
+        "caption": "Jalan Bareng Nenek"
+      },
+      {
+        "src": "/images/album/01-pertama/29-tunggu-bayar.webp",
+        "alt": "Foto kenangan anniversary pertama: Tunggu Bayar.",
+        "caption": "Tunggu Bayar"
+      },
+      {
+        "src": "/images/album/01-pertama/30-aisyah-birthday.webp",
+        "alt": "Foto kenangan anniversary pertama: Aisyah Birthday.",
+        "caption": "Aisyah Birthday"
+      },
+      {
+        "src": "/images/album/01-pertama/31-apa-ya%3F.webp",
+        "alt": "Foto kenangan anniversary pertama: Apa Ya?.",
+        "caption": "Apa Ya?"
+      },
+      {
+        "src": "/images/album/01-pertama/32-lebaran.webp",
+        "alt": "Foto kenangan anniversary pertama: Lebaran.",
+        "caption": "Lebaran"
+      },
+      {
+        "src": "/images/album/01-pertama/33-lebaran-kudus.webp",
+        "alt": "Foto kenangan anniversary pertama: Lebaran Kudus.",
+        "caption": "Lebaran Kudus"
+      },
+      {
+        "src": "/images/album/01-pertama/34-lebaran-semarang.webp",
+        "alt": "Foto kenangan anniversary pertama: Lebaran Semarang.",
+        "caption": "Lebaran Semarang"
+      },
+      {
+        "src": "/images/album/01-pertama/35-family-gathering.webp",
+        "alt": "Foto kenangan anniversary pertama: Family Gathering.",
+        "caption": "Family Gathering"
+      },
+      {
+        "src": "/images/album/01-pertama/36-prepare-pulang.webp",
+        "alt": "Foto kenangan anniversary pertama: Prepare Pulang.",
+        "caption": "Prepare Pulang"
+      },
+      {
+        "src": "/images/album/01-pertama/37-sama-azka.webp",
+        "alt": "Foto kenangan anniversary pertama: Sama Azka.",
+        "caption": "Sama Azka"
+      },
+      {
+        "src": "/images/album/01-pertama/38-baninan.webp",
+        "alt": "Foto kenangan anniversary pertama: Baninan.",
+        "caption": "Baninan"
+      },
+      {
+        "src": "/images/album/01-pertama/39-sama-aira.webp",
+        "alt": "Foto kenangan anniversary pertama: Sama Aira.",
+        "caption": "Sama Aira"
+      },
+      {
+        "src": "/images/album/01-pertama/40-swiming.webp",
+        "alt": "Foto kenangan anniversary pertama: Swiming.",
+        "caption": "Swiming"
+      },
+      {
+        "src": "/images/album/01-pertama/41-another-birthday.webp",
+        "alt": "Foto kenangan anniversary pertama: Another Birthday.",
+        "caption": "Another Birthday"
+      },
+      {
+        "src": "/images/album/01-pertama/42-swiming-again.webp",
+        "alt": "Foto kenangan anniversary pertama: Swiming Again.",
+        "caption": "Swiming Again"
+      },
+      {
+        "src": "/images/album/01-pertama/43-meet-greet-bocil.webp",
+        "alt": "Foto kenangan anniversary pertama: Meet Greet Bocil.",
+        "caption": "Meet Greet Bocil"
+      },
+      {
+        "src": "/images/album/01-pertama/44-first-tennis.webp",
+        "alt": "Foto kenangan anniversary pertama: First Tennis.",
+        "caption": "First Tennis"
+      },
+      {
+        "src": "/images/album/01-pertama/45-tak-pukul-ya.webp",
+        "alt": "Foto kenangan anniversary pertama: Tak Pukul Ya.",
+        "caption": "Tak Pukul Ya"
+      },
+      {
+        "src": "/images/album/01-pertama/46-breakfast-at-coffeshop.webp",
+        "alt": "Foto kenangan anniversary pertama: Breakfast At Coffeshop.",
+        "caption": "Breakfast At Coffeshop"
+      },
+      {
+        "src": "/images/album/01-pertama/47-jalan-jalan.webp",
+        "alt": "Foto kenangan anniversary pertama: Jalan Jalan.",
+        "caption": "Jalan Jalan"
+      },
+      {
+        "src": "/images/album/01-pertama/48-prepare-unagi.webp",
+        "alt": "Foto kenangan anniversary pertama: Prepare Unagi.",
+        "caption": "Prepare Unagi"
+      },
+      {
+        "src": "/images/album/01-pertama/49-unagi-meal.webp",
+        "alt": "Foto kenangan anniversary pertama: Unagi Meal.",
+        "caption": "Unagi Meal"
+      },
+      {
+        "src": "/images/album/01-pertama/50-after-unagi-meal.webp",
+        "alt": "Foto kenangan anniversary pertama: After Unagi Meal.",
+        "caption": "After Unagi Meal"
+      },
+      {
+        "src": "/images/album/01-pertama/51-iseng-fotsepatu.webp",
+        "alt": "Foto kenangan anniversary pertama: Iseng Fotsepatu.",
+        "caption": "Iseng Fotsepatu"
+      },
+      {
+        "src": "/images/album/01-pertama/52-waiting-kvile.webp",
+        "alt": "Foto kenangan anniversary pertama: Waiting Kvile.",
+        "caption": "Waiting Kvile"
+      },
+      {
+        "src": "/images/album/01-pertama/53-jalan-di-kvile.webp",
+        "alt": "Foto kenangan anniversary pertama: Jalan Di Kvile.",
+        "caption": "Jalan Di Kvile"
+      },
+      {
+        "src": "/images/album/01-pertama/54-behind-restaurant-kvile.webp",
+        "alt": "Foto kenangan anniversary pertama: Behind Restaurant Kvile.",
+        "caption": "Behind Restaurant Kvile"
+      },
+      {
+        "src": "/images/album/01-pertama/55-at-terminal.webp",
+        "alt": "Foto kenangan anniversary pertama: At Terminal.",
+        "caption": "At Terminal"
+      },
+      {
+        "src": "/images/album/01-pertama/56-kvile-bench.webp",
+        "alt": "Foto kenangan anniversary pertama: Kvile Bench.",
+        "caption": "Kvile Bench"
+      },
+      {
+        "src": "/images/album/01-pertama/57-dicukup-cukupkan.webp",
+        "alt": "Foto kenangan anniversary pertama: Dicukup Cukupkan.",
+        "caption": "Dicukup Cukupkan"
+      },
+      {
+        "src": "/images/album/01-pertama/58-metal-cilik.webp",
+        "alt": "Foto kenangan anniversary pertama: Metal Cilik.",
+        "caption": "Metal Cilik"
+      },
+      {
+        "src": "/images/album/01-pertama/59-first-mabar-tennis.webp",
+        "alt": "Foto kenangan anniversary pertama: First Mabar Tennis.",
+        "caption": "First Mabar Tennis"
+      },
+      {
+        "src": "/images/album/01-pertama/60-morning-tennis.webp",
+        "alt": "Foto kenangan anniversary pertama: Morning Tennis.",
+        "caption": "Morning Tennis"
+      },
+      {
+        "src": "/images/album/01-pertama/61-after-announcement.webp",
+        "alt": "Foto kenangan anniversary pertama: After Announcement.",
+        "caption": "After Announcement"
+      },
+      {
+        "src": "/images/album/01-pertama/62-lift-selfie.webp",
+        "alt": "Foto kenangan anniversary pertama: Lift Selfie.",
+        "caption": "Lift Selfie"
+      },
+      {
+        "src": "/images/album/01-pertama/63-holding-hand.webp",
+        "alt": "Foto kenangan anniversary pertama: Holding Hand.",
+        "caption": "Holding Hand"
+      },
+      {
+        "src": "/images/album/01-pertama/64-resto-apung.webp",
+        "alt": "Foto kenangan anniversary pertama: Resto Apung.",
+        "caption": "Resto Apung"
+      },
+      {
+        "src": "/images/album/01-pertama/65-hadiah-quiz.webp",
+        "alt": "Foto kenangan anniversary pertama: Hadiah Quiz.",
+        "caption": "Hadiah Quiz"
+      },
+      {
+        "src": "/images/album/01-pertama/66-warto-jadi-panitia.webp",
+        "alt": "Foto kenangan anniversary pertama: Warto Jadi Panitia.",
+        "caption": "Warto Jadi Panitia"
+      }
+    ],
+    "conversationPrompt": "Apa kesan pertamamu tentang aku?",
+    "letter": "Terima kasih sudah membuat tahun pertamaku sebagai suamimu terasa begitu berarti. Aku sayang kamu. Semoga kita terus punya banyak cerita untuk dikenang dan ditulis bersama.",
+    "signoff": "Selalu, aku."
+  }
+]
