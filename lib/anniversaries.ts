@@ -1,7 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import type { Anniversary } from "@/data/anniversaries";
-import { getAnniversaryDatabase } from "@/lib/mongodb";
+import { getAnniversaryDatabase, getWritableDatabase } from "@/lib/mongodb";
 
 async function findLatestAnniversary(): Promise<Anniversary | null> {
   const database = await getAnniversaryDatabase();
@@ -36,3 +36,15 @@ async function findAnniversaries(): Promise<Anniversary[]> {
 export const getLatestAnniversary = cache(findLatestAnniversary);
 export const getAnniversaryBySlug = cache(findAnniversaryBySlug);
 export const listAnniversaries = cache(findAnniversaries);
+
+export async function updateAnniversaryLetter(
+  slug: string,
+  data: { letter: string; signoff: string },
+) {
+  const database = await getWritableDatabase();
+  const result = await database
+    .collection<Anniversary>("anniversaries")
+    .updateOne({ slug }, { $set: data });
+
+  return result.matchedCount;
+}

@@ -41,8 +41,9 @@ try {
   })), { ordered: false });
 
   console.info(`Album tersinkron: ${result.modifiedCount} foto baru ditambahkan dari ${photos.length} foto.`);
-} catch {
+} catch (error) {
   console.error("Sinkronisasi Atlas gagal. Periksa URI, hak akses user database, dan network access list.");
+  console.error(`Penyebab: ${error.codeName ?? error.name}: ${error.message}`);
   process.exitCode = 1;
 } finally {
   await client.close();

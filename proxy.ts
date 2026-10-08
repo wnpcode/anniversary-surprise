@@ -11,5 +11,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/arsip/:path*", "/remote/:path*", "/layar/:path*"],
+  matcher: ["/arsip/:path*", "/remote/:path*", "/layar/:path*", "/admin/:path*"],
 };

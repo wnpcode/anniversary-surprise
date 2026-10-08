@@ -4,7 +4,7 @@ import { ARCHIVE_COOKIE, ARCHIVE_SESSION_MAX_AGE, createArchiveSession } from "@
 
 export const runtime = "nodejs";
 
-const ALLOWED_DESTINATIONS = ["/arsip", "/remote", "/layar"];
+const ALLOWED_DESTINATIONS = ["/arsip", "/remote", "/layar", "/admin"];
 
 function matchesSecret(input: string, expected: string) {
   const inputDigest = createHash("sha256").update(input).digest();
@@ -27,9 +27,11 @@ export async function POST(request: NextRequest) {
   const password = process.env.ARCHIVE_PASSWORD;
   const sessionSecret = process.env.ARCHIVE_SESSION_SECRET;
 
-  if (!username || !password || !sessionSecret || Buffer.byteLength(sessionSecret) < 32) {
-    const setupUrl = new URL("/masuk/?error=setup", request.url);
-    return NextResponse.redirect(setupUrl, 303);
+  if (!username || !password || !sessionSecret) {
+    return NextResponse.redirect(new URL("/masuk/?error=setup", request.url), 303);
+  }
+  if (Buffer.byteLength(sessionSecret) < 32) {
+    return NextResponse.redirect(new URL("/masuk/?error=secret", request.url), 303);
   }
 
   const formData = await request.formData();

@@ -94,8 +94,12 @@ try {
   })));
 
   console.info("Anniversary collection validated, indexed, and seeded without overwriting existing records.");
-} catch {
+} catch (error) {
   console.error("Atlas setup failed. Check the connection string, database user permissions, and network access list.");
+  console.error(`Penyebab: ${error.codeName ?? error.name}: ${error.message}`);
+  if (error.code === 13 || /not allowed to do action/.test(String(error.message))) {
+    console.error("User di MONGODB_SEED_URI butuh role readWrite dan dbAdmin pada database ini (collMod/createCollection dengan validator).");
+  }
   process.exitCode = 1;
 } finally {
   await client.close();

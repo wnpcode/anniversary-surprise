@@ -176,6 +176,18 @@ h2 { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 4rem); line-height
 .login-form button:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
 .login-form button:focus-visible, .archive-logout:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .login-page > .text-link { margin-top: 1.5rem; }
+.admin-content { width: min(100% - 2 * var(--page-gutter), 44rem); }
+.admin-message { max-width: 34rem; margin: 0 0 2rem; color: var(--ink-soft); line-height: 1.65; }
+.admin-message-error { color: var(--accent-dark); }
+.admin-form { display: grid; gap: .65rem; }
+.admin-form label { margin-top: .7rem; color: var(--ink-soft); font: .62rem var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.admin-form textarea, .admin-form input { width: 100%; min-height: 3rem; padding: .7rem .8rem; border: 1px solid var(--line); border-radius: 0; color: var(--ink); background: rgba(255, 255, 255, .32); font: inherit; }
+.admin-form textarea { min-height: 16rem; resize: vertical; font-family: var(--serif); font-size: 1.05rem; line-height: 1.7; }
+.admin-form textarea:focus-visible, .admin-form input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.admin-form button { width: fit-content; min-width: 14rem; min-height: 3rem; margin-top: 1rem; padding: .75rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; border: 1px solid var(--ink); color: var(--paper); background: var(--ink); cursor: pointer; }
+.admin-form button:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+.admin-form button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.admin-links { display: flex; flex-wrap: wrap; gap: 0 2rem; margin-top: 2rem; }
 .logout-form { margin: 0; }
 .screen-status { margin: 0 0 1.5rem; display: flex; align-items: center; gap: .6rem; color: var(--ink-muted); font: .68rem var(--mono); letter-spacing: .11em; text-transform: uppercase; }
 .screen-button { width: min(100%, 23rem); min-height: 3rem; padding: .75rem 1rem; display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--ink); border-radius: 0; color: var(--paper); background: var(--ink); cursor: pointer; }
@@ -292,6 +304,7 @@ h2 { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 4rem); line-height
   .screen-links { flex-direction: column; align-items: center; }
   .archive-item { grid-template-columns: 2rem minmax(0, 1fr) 1.25rem; }
   .archive-intro { margin-bottom: 2.5rem; }
+  .admin-form button { width: 100%; }
 }
 
 @media (hover: none) {

@@ -47,3 +47,9 @@
 ### Phase Layar dan remote
 
 - [x] Tambahkan mode layar, halaman remote, API perintah, dan integrasi surat/album/kembang api.
+
+## Sprint/Phase Admin surat
+
+### Phase Sunting surat
+
+- [x] Tambahkan halaman admin untuk menyunting surat dan penutup tiap edisi.

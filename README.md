@@ -14,7 +14,7 @@ Setelah dependency berubah, jalankan `pnpm install` untuk menyinkronkan `pnpm-lo
 
 Di Vercel, atur `ANNIV_MONGODB_URI` ke akun database read-only dan `MONGODB_DB` ke nama database untuk environment yang digunakan. Simpan URI hanya di environment variables server; `.env.local` sudah diabaikan Git. Batasi network access Atlas ke jalur egress Vercel yang dipilih, dan jangan membuka akses ke semua alamat IP.
 
-Untuk membuka `/arsip/` dan `/arsip/[slug]/`, atur `ARCHIVE_USERNAME`, `ARCHIVE_PASSWORD`, dan `ARCHIVE_SESSION_SECRET` sebagai environment variables server di Vercel. Isi username dan password menggunakan nilai yang kamu pilih; buat session secret acak minimal 32 byte, misalnya dengan `openssl rand -base64 32`. Atur variabel yang sama secara lokal di `.env.local`. Login membuat cookie HttpOnly bertanda tangan yang berlaku tujuh hari; halaman utama tetap terbuka. Foto album di `/images/album/` dapat diakses publik supaya tampil di halaman utama. Jangan masukkan nilai kredensial ke source code atau commit.
+Untuk membuka `/arsip/` dan `/arsip/[slug]/`, atur `ARCHIVE_USERNAME`, `ARCHIVE_PASSWORD`, dan `ARCHIVE_SESSION_SECRET` sebagai environment variables server di Vercel. Isi username dan password menggunakan nilai yang kamu pilih; buat session secret acak minimal 32 byte, misalnya dengan `openssl rand -base64 32`. Atur variabel yang sama secara lokal di `.env.local`. Setelah menambah atau mengubah environment variable di Vercel, deploy ulang, karena nilai baru tidak masuk ke deployment yang sudah berjalan. Login membuat cookie HttpOnly bertanda tangan yang berlaku tujuh hari; halaman utama tetap terbuka. Foto album di `/images/album/` dapat diakses publik supaya tampil di halaman utama. Jangan masukkan nilai kredensial ke source code atau commit.
 
 ## Menambahkan anniversary berikutnya
 
@@ -37,3 +37,12 @@ Situs di laptop atau TV bisa dikendalikan dari HP: pindah ke kembang api pembuka
 - Perintah dikirim lewat polling pendek ke `/api/remote/` dan disimpan dalam satu dokumen di collection `remote` (dibuat otomatis saat perintah pertama dikirim). Tidak ada WebSocket, jadi jalan di Vercel tanpa dependency tambahan.
 - Pengiriman perintah butuh akses tulis. `ANNIV_MONGODB_URI` di Vercel adalah user read-only, jadi atur `MONGODB_REMOTE_URI` ke URI user Atlas dengan role `readWrite` pada database yang sama. Jika kosong, API memakai `ANNIV_MONGODB_URI`.
 - Perintah dari HP tersimpan di Atlas (20 terakhir). Layar yang baru menyala mengabaikan perintah lama dan hanya menjalankan perintah yang dikirim sesudahnya. Perintah yang tiba saat tujuannya belum tampil, misalnya membuka surat tepat setelah pindah halaman, diabaikan; kirim ulang setelah status di HP menunjukkan halaman yang benar.
+
+## Menyunting surat
+
+Surat dan kalimat penutup tiap edisi bisa diubah dari browser, termasuk dari HP, tanpa membuka Atlas.
+
+- Buka `/admin/` dan masuk dengan login arsip yang sama (`/masuk/`). Pilih edisi, ubah **Surat** dan **Penutup**, lalu tekan **Simpan surat**. Tautan "Kelola surat" juga ada di footer `/arsip/`.
+- Hanya `letter` (maksimal 5000 karakter) dan `signoff` (maksimal 120 karakter) yang bisa diubah, dan keduanya tidak boleh kosong. Baris baru menjadi paragraf baru di halaman. Field lain tetap diedit lewat Atlas.
+- Penyimpanan memakai jalur tulis yang sama dengan remote: `MONGODB_REMOTE_URI`, dengan `ANNIV_MONGODB_URI` sebagai cadangan jika kosong. User pada URI itu perlu role `readWrite` pada database, karena `ANNIV_MONGODB_URI` di Vercel hanya read-only.
+- Pastikan `ANNIV_MONGODB_URI` dan `MONGODB_REMOTE_URI` menunjuk cluster yang sama, kalau tidak suntingan ditulis ke cluster yang tidak dibaca situs.

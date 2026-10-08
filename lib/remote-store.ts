@@ -1,5 +1,5 @@
 import "server-only";
-import { getMongoClient } from "@/lib/mongodb";
+import { getWritableDatabase } from "@/lib/mongodb";
 
 const REMOTE_DOCUMENT_ID = "utama";
 const MAX_STORED_COMMANDS = 20;
@@ -14,19 +14,7 @@ export type RemoteDocument = {
 };
 
 async function getRemoteCollection() {
-  const uri = process.env.MONGODB_REMOTE_URI ?? process.env.ANNIV_MONGODB_URI;
-  if (!uri)
-    throw new Error(
-      "Missing MONGODB_REMOTE_URI or ANNIV_MONGODB_URI environment variable.",
-    );
-
-  const databaseName = process.env.MONGODB_DB;
-  if (!databaseName)
-    throw new Error("Missing MONGODB_DB environment variable.");
-
-  return (await getMongoClient(uri))
-    .db(databaseName)
-    .collection<RemoteDocument>("remote");
+  return (await getWritableDatabase()).collection<RemoteDocument>("remote");
 }
 
 export async function pushCommand(command: string) {

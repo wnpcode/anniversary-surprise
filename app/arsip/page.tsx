@@ -35,7 +35,7 @@ export default async function ArchivePage() {
           </ol>
         ) : <p className="archive-empty">Belum ada cerita yang tersimpan.</p>}
       </section>
-      <footer className="footer"><p>DISIMPAN BERSAMA.</p><Link href="/">Kembali ke cerita terbaru ↑</Link></footer>
+      <footer className="footer"><p>DISIMPAN BERSAMA.</p><div className="footer-links"><Link href="/admin/">Kelola surat →</Link><Link href="/">Kembali ke cerita terbaru ↑</Link></div></footer>
     </main>
   );
 }

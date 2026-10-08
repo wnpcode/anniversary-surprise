@@ -41,3 +41,17 @@ export async function getAnniversaryDatabase() {
 
   return (await getMongoClient()).db(databaseName);
 }
+
+export async function getWritableDatabase() {
+  const uri = process.env.MONGODB_REMOTE_URI ?? process.env.ANNIV_MONGODB_URI;
+  if (!uri)
+    throw new Error(
+      "Missing MONGODB_REMOTE_URI or ANNIV_MONGODB_URI environment variable.",
+    );
+
+  const databaseName = process.env.MONGODB_DB;
+  if (!databaseName)
+    throw new Error("Missing MONGODB_DB environment variable.");
+
+  return (await getMongoClient(uri)).db(databaseName);
+}

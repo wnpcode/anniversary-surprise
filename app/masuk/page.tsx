@@ -17,8 +17,10 @@ export default async function ArchiveLoginPage({
   const message = error === "invalid"
     ? "Username atau password belum cocok."
     : error === "setup"
-      ? "Akses arsip belum dikonfigurasi."
-      : "Masukkan kredensial untuk membuka arsip kita.";
+      ? "Akses arsip belum dikonfigurasi (ARCHIVE_USERNAME, ARCHIVE_PASSWORD, ARCHIVE_SESSION_SECRET)."
+      : error === "secret"
+        ? "Session secret arsip kurang dari 32 byte. Buat ulang dengan openssl rand -base64 32."
+        : "Masukkan kredensial untuk membuka arsip kita.";
 
   return (
     <main className="login-page">
